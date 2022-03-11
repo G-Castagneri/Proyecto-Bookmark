@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+    <link rel="stylesheet" href="style-section.css" />
+    <link rel="stylesheet" href="styles-functions-js.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style-header-footer.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="topnav style-header" id="myTopnav">
+        
+        <a href="/" rel="Home" >
+          <img src="./images/logo-bookmark.svg" alt="Logo" />
+        </a>
+        <div class="style-drop">
+          
+          <a class="hover-red" href="#features" rel="Features">Features</a>
+
+          <a class="hover-red" href="#" rel="Pricing">Pricing</a>
+
+          <a class="hover-red" href="#contact" rel="Contact">Contact</a>
+
+          <a href="#" rel="Login" class="button_red button-red-hover">Login</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            >&#9776;</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="first-section">
+        <div>
+          <h1 class="text-dark-blue">A Simple Bookmark Manager</h1>
+          <p class="text-grey p-first-section">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="box-1">
+            <a href="#" rel="Chrome" class="button_blue"> Get it on Chrome </a>
+            <a href="#" rel="Firefox" class="button_grey button-grey-hover">
+              Get it on Firefox
+            </a>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="style-blue"></div>
+          <img
+            src="./images/illustration-hero.svg"
+            alt="Imagen de la Aplicación"
+          />
+        </div>
+      </section>
+
+      <section>
+        <div class="text-center">
+          <h2 id="features" class="text-dark-blue">Features</h2>
+          <p class="text-grey">
+            Our aim is to make it quick and easy for you to access your
+            <br />
+            favourite websites. Your bookmarks sync between your devices
+            <br />
+            so you can access them on the go.
+          </p>
+
+          <div class="style-title">
+            <button
+              class="tabs linea-bottom-grey hover-red text-mobile-tabs"
+              onclick="changeTab(event, `Bookmarking`)"
+            >
+              Simple Bookmarking
+            </button>
+            <button
+              class="tabs linea-bottom-grey hover-red text-mobile-tabs"
+              onclick="changeTab(event, 'Searching')"
+            >
+              Speedy Searching
+            </button>
+            <button
+              class="tabs linea-bottom-grey hover-red text-mobile-tabs"
+              onclick="changeTab(event, 'Sharing')"
+            >
+              Easy Sharing
+            </button>
+          </div>
+
+          <div id="Bookmarking" class="tab_content">
+            <div>
+              <img
+                class="img-onClick-1"
+                src="./images/illustration-features-tab-1.svg"
+                alt="Imagen de la Aplicación"
+              />
+            </div>
+            <div class="text-onClick-1">
+              <h2 class="text-dark-blue">Bookmark in one click</h2>
+              <p class="text-grey">
+                Organize your bookmarks however you like. Our
+                <br />
+                simple drag-and-drop interface gives you complete
+                <br />
+                control over how you manage your favourite sites.
+              </p>
+              <a href="#" rel="More info" class="button_blue button-mobile">
+                More Info
+              </a>
+            </div>
+          </div>
+          <div id="Searching" class="tab_content space-between">
+            <div>
+              <img
+                class="img-onClick-2"
+                src="./images/illustration-features-tab-2.svg"
+                alt="Imagen de la Aplicación"
+              />
+            </div>
+            <div class="text-onClick-2">
+              <h2 class="text-dark-blue">Intelligent search</h2>
+              <p class="text-grey">
+                Our powerful search feature will help you find saved
+                <br />
+                sites in no time at all. No need to trawl through all of
+                <br />
+                your bookmarks.
+              </p>
+              <a href="#" rel="More info" class="button_blue button-mobile">
+                More Info
+              </a>
+            </div>
+          </div>
+
+          <div id="Sharing" class="tab_content space-between">
+            <div>
+              <img
+                class="img-onClick-3"
+                src="./images/illustration-features-tab-3.svg"
+                alt="Imagen de la Aplicación"
+              />
+            </div>
+            <div class="text-onClick-3">
+              <h2 class="text-dark-blue">Share your bookmarks</h2>
+              <p class="text-grey">
+                Easily share your bookmarks and collections with
+                <br />
+                others. Create a shareable link that you can send at
+                <br />
+                the click of a button.
+              </p>
+              <a href="#" rel="More info" class="button_blue button-mobile">
+                More Info
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="text-center">
+            <h2 class="text-dark-blue">Download the extension</h2>
+            <p class="text-grey">
+              We’ve got more browsers in the pipeline. Please do let us know if
+              <br />
+              you’ve got a favourite you’d like us to prioritize.
+            </p>
+          </div>
+          <div class="card-styles">
+            <div class="card">
+              <img
+                class="img-logo"
+                src="./images/logo-chrome.svg"
+                alt="Logo Chrome"
+              />
+              <h3 class="text-blue">Add to Chrome</h3>
+              <p class="card-p-color">Minimum version 62</p>
+              <img
+                class="card-img"
+                src="./images/bg-dots.svg"
+                alt="Imagen punteada"
+              />
+              <a
+                href="#"
+                rel="Chrome Extension"
+                class="button_blue style-button-mobile"
+                >Add & Install Extension
+              </a>
+            </div>
+            <div class="card">
+              <img
+                class="img-logo"
+                src="./images/logo-firefox.svg"
+                alt="Logo Firefox"
+              />
+              <h3 class="text-blue">Add to Firefox</h3>
+              <p class="card-p-color">Minimum version 55</p>
+              <img
+                class="card-img"
+                src="./images/bg-dots.svg"
+                alt="Imagen punteada"
+              />
+              <a
+                href="#"
+                rel="Firefox Extension"
+                class="button_blue style-button-mobile"
+                >Add & Install Extension
+              </a>
+            </div>
+            <div class="card">
+              <img
+                class="img-logo"
+                src="./images/logo-opera.svg"
+                alt="Logo Opera"
+              />
+              <h3 class="text-blue">Add to Opera</h3>
+              <p class="card-p-color">Minimum version 46</p>
+              <img
+                class="card-img"
+                src="./images/bg-dots.svg"
+                alt="Imagen punteada"
+              />
+              <a
+                href="#"
+                rel="Opera Extension"
+                class="button_blue style-button-mobile"
+                >Add & Install Extension
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="text-center size">
+          <h2 class="text-dark-blue">Frequently Asked Questions</h2>
+          <p class="text-grey">
+            Here are some of our FAQs. If you have any other questions <br />
+            you’d like answered please feel free to email us.
+          </p>
+
+          <button class="accordion line-bottom-grey line-top-grey style-arrow">
+            <!-- Question 1 -->
+            <h3 class="text-dark-blue hover-red">What is Bookmark?</h3>
+            <img src="./images/icon-arrow.svg" alt="Imagen-Flecha" />
+          </button>
+          <div class="panel line-bottom-grey">
+            <p class="text-grey text-left">
+              <!-- Answer 1 -->
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+          </div>
+
+          <button class="accordion line-bottom-grey style-arrow">
+            <!-- Question 2 -->
+            <h3 class="text-dark-blue hover-red">
+              How can I request a new browser?
+            </h3>
+            <img src="./images/icon-arrow.svg" alt="Imagen-Flecha" />
+          </button>
+
+          <div class="panel line-bottom-grey">
+            <p class="text-grey text-left">
+              <!-- Answer 2 -->
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+          </div>
+
+          <button class="accordion line-bottom-grey style-arrow">
+            <!-- Question 3 -->
+            <h3 class="text-dark-blue hover-red">Is there a mobile app?</h3>
+            <img src="./images/icon-arrow.svg" alt="Imagen-Flecha" />
+          </button>
+          <div class="panel line-bottom-grey">
+            <p class="text-grey text-left">
+              <!-- Answer 3 -->
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+          <button class="accordion line-bottom-grey style-arrow">
+            <!-- Question 4 -->
+            <h3 class="text-dark-blue hover-red">
+              What about other Chromium browsers?
+            </h3>
+            <img src="./images/icon-arrow.svg" alt="Imagen-Flecha" />
+          </button>
+          <div class="panel line-bottom-grey">
+            <p class="text-grey text-left">
+              <!-- Answer 4 -->
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+        <div class="button-blue-center">
+          <a href="#" rel="More Info" class="button_blue style-button-mobile"
+            >More Info</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <p class="text-size-footer">35,000+ already joined</p>
+        <p>
+          Stay up-to-date with what
+          <br />
+          we’re doing
+        </p>
+        <div id="contact" class="padding-bottom">
+          <input
+            class="heigth"
+            placeholder="Enter your email address"
+            type="text"
+          />
+          <a href="#" rel="Contact Us" class="button_red button-red-hover"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+
+      <div class="last otro">
+        <div class="footer-left">
+          <img
+            src="./images/logo-bookmark-white.png"
+            alt="Logo Bookmark"
+            class="logo-mobile-left"
+          />
+
+          <a href="#features" rel="Features" class="button_footer hover-red"
+            >Features</a
+          >
+          <a href="#" rel="Pricing" class="button_footer hover-red">Pricing </a>
+          <a href="#contact" rel="Contact" class="button_footer hover-red"
+            >Contact</a
+          >
+        </div>
+        <div class="logo-mobile-right">
+          <img src="./images/icon-facebook.svg" alt="Logo Facebook" />
+          <img src="./images/icon-twitter.svg" alt="Logo Twitter" />
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
